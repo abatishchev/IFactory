@@ -4,9 +4,9 @@
 		<id>IFactory</id>
 		<summary>Set of interfaces for the Abstract Factory pattern such as IFactory&lt;T&gt;</summary>
 		<description>IFactory&lt;T&gt;</description>
-		<version>0.0.0</version>
+		<version>$Version$</version>
 		<authors>Alexander Batishchev</authors>
-		<copyright>Copyright © Alexander Batishchev 2014</copyright>
+		<copyright>Copyright Â© Alexander Batishchev 2014</copyright>
 		<projectUrl>https://github.com/abatishchev/IFactory</projectUrl>
 		<licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
