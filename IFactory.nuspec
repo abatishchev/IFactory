@@ -2,20 +2,21 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>IFactory</id>
-		<summary>Set of interfaces for the Abstract Factory pattern such as IFactory&lt;T&gt;</summary>
-		<description>IFactory&lt;T&gt;</description>
+    <description>Set of interfaces for the Abstract Factory pattern such as IFactory&lt;T&gt;</description>
+    <!--Summary (shown in package search results)-->
+    <summary>Set of interfaces such as IFactory&lt;T&gt;</summary>
 		<version>$Version$</version>
 		<authors>Alexander Batishchev</authors>
 		<copyright>Copyright © Alexander Batishchev 2014</copyright>
 		<projectUrl>https://github.com/abatishchev/IFactory</projectUrl>
 		<licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<tags></tags>
+		<tags>factory abstract-factory design-patterns</tags>
 		<language>en-US</language>
 		<dependencies >
 		</dependencies>
 	</metadata>
 	<files>
-		<file src="IFactory.dll" target="lib\net45" />
+		<file src="IFactory\bin\$Configuration$\IFactory.dll" target="lib\net45" />
 	</files>
 </package>
