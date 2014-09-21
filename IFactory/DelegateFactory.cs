@@ -17,18 +17,33 @@ namespace Factory
 		}
 	}
 
-	public class DelegateFactory<T, TParam> : IFactory<T, TParam>
+	public class DelegateFactory<T, TArg1> : IFactory<T, TArg1>
 	{
-		private readonly Func<TParam, T> _func;
+		private readonly Func<TArg1, T> _func;
 
-		public DelegateFactory(Func<TParam, T> func)
+		public DelegateFactory(Func<TArg1, T> func)
 		{
 			_func = func;
 		}
 
-		public T Create(TParam param)
+		public T Create(TArg1 param)
 		{
 			return _func(param);
+		}
+	}
+
+	public class DelegateFactory<T, TArg1, TArg2> : IFactory<T, TArg1, TArg2>
+	{
+		private readonly Func<TArg1, TArg2, T> _func;
+
+		public DelegateFactory(Func<TArg1, TArg2, T> func)
+		{
+			_func = func;
+		}
+
+		public T Create(TArg1 param1, TArg2 param2)
+		{
+			return _func(param1, param2);
 		}
 	}
 }
