@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>IFactory.SimpleInjector</id>
+    <description>Set of extension methods for IFactory and SimpleInjector</description>
+    <!--Summary (shown in package search results)-->
+    <summary>Integration between IFactory and SimpleInjector</summary>
+    <version>$Version$</version>
+    <authors>Alexander Batishchev</authors>
+    <copyright>Copyright © Alexander Batishchev 2015</copyright>
+    <projectUrl>https://github.com/abatishchev/IFactory</projectUrl>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>factory simpleinjector</tags>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="IFactory" />
+      <dependency id="SimpleInjector" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="IFactory.SimpleInjector\bin\$Configuration$\IFactory.SimpleInjector.*" target="lib\net45" />
+  </files>
+</package>
