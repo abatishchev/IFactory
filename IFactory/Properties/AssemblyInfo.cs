@@ -4,8 +4,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("IFactory")]
 [assembly: AssemblyProduct("IFactory")]
-
-[assembly: AssemblyCopyright("Copyright © Alexander Batishchev 2014")]
+[assembly: AssemblyCopyright("Copyright © Alexander Batishchev 2015")]
 
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(true)]

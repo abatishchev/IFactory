@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-	<metadata>
-		<id>IFactory</id>
+  <metadata>
+    <id>IFactory</id>
     <description>Set of interfaces for the Abstract Factory pattern such as IFactory&lt;T&gt;</description>
     <!--Summary (shown in package search results)-->
     <summary>Set of interfaces such as IFactory&lt;T&gt;</summary>
-		<version>$Version$</version>
-		<authors>Alexander Batishchev</authors>
-		<copyright>Copyright © Alexander Batishchev 2014</copyright>
-		<projectUrl>https://github.com/abatishchev/IFactory</projectUrl>
-		<licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<tags>factory abstract-factory design-patterns</tags>
-		<language>en-US</language>
-		<dependencies >
-		</dependencies>
-	</metadata>
-	<files>
-		<file src="IFactory\bin\$Configuration$\IFactory.dll" target="lib\net45" />
-	</files>
+    <version>$Version$</version>
+    <authors>Alexander Batishchev</authors>
+    <copyright>Copyright © Alexander Batishchev 2015</copyright>
+    <projectUrl>https://github.com/abatishchev/IFactory</projectUrl>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>factory abstract-factory design-patterns</tags>
+    <language>en-US</language>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="IFactory\bin\$Configuration$\IFactory.*" target="lib\net45" />
+  </files>
 </package>
