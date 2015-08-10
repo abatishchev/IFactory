@@ -7,9 +7,9 @@
     <ProjectGuid>{0A9D624F-AB4A-4235-A42D-786E7483EE87}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IFactory.SimpleInjector</RootNamespace>
+    <RootNamespace>Factory.SimpleInjector</RootNamespace>
     <AssemblyName>IFactory.SimpleInjector</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
