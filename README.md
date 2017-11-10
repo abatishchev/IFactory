@@ -1,7 +1,7 @@
 IFactory
 ===
 
-Set of interfaces for the Abstract Factory pattern such as IFactory&lt;T>
+Set of interfaces for the Abstract Factory pattern such as `Func<T>`.
 
 Downloads
 ===
