@@ -1,22 +1,22 @@
 IFactory
 ===
 
-Set of interfaces for the Abstract Factory pattern such as `Func<T>`.
+Set of interfaces for the Abstract Factory pattern such as `IFactory<T>`.
 
 Downloads
 ===
 
 Available on NuGet:
 
-- [IFactory](https://www.nuget.org/packages/IFactory/)
-- [IFactory.SimpleInjector](https://www.nuget.org/packages/IFactory.SimpleInjector/)
+[![IFactory](https://img.shields.io/nuget/v/IFactory.svg)](https://www.nuget.org/packages/IFactory)
+[![IFactory.SimpleInjector](https://img.shields.io/nuget/vpre/IFactory.SimpleInjector.svg)](https://www.nuget.org/packages/IFactory.SimpleInjector)
 
 Samples
 ===
 
 Rather than using `Func<T>` that you can't really easily to mock-up or register into a dependency injection container, use `IFactory<T>` instead:
 
-```csharp
+```c#
 public class OrderRepository
 {
     public OrderRepository(IFactory<DbContext> dbContextFactory)
@@ -28,7 +28,7 @@ public class OrderRepository
 
 To simplify such registration and increase code reuse, use the following extension method. The one provided is for [SimpleInjector](https://github.com/simpleinjector/SimpleInjector/):
 
-```csharp
+```c#
 using IFactory.SimpleInjector;
 
 internal static class ContainerConfig
@@ -51,7 +51,7 @@ public class DbContextFactory : IFactory<DbContext>
 
 So now instead of injecting `IFactory<T>` and calling `Create()` every time manually, you can inject just `T` itself:
 
-```csharp
+```c#
 public class OrderRepository
 {
     public OrderRepository(DbContext dbContext)

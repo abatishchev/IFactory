@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFactory", "IFactory\IFactory.csproj", "{638179B3-17EA-45E0-BAFA-9E31FC938BDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFactory", "src\IFactory\IFactory.csproj", "{638179B3-17EA-45E0-BAFA-9E31FC938BDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFactory.SimpleInjector", "src\IFactory.SimpleInjector\IFactory.SimpleInjector.csproj", "{0A9D624F-AB4A-4235-A42D-786E7483EE87}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1161A0F9-C56E-4A3D-AD8D-87624DBD8BA2}"
 	ProjectSection(SolutionItems) = preProject
-		IFactory.nuspec = IFactory.nuspec
-		IFactory.SimpleInjector.nuspec = IFactory.SimpleInjector.nuspec
+		LICENSE.md = LICENSE.md
+		README.md = README.md
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFactory.SimpleInjector", "IFactory.SimpleInjector\IFactory.SimpleInjector.csproj", "{0A9D624F-AB4A-4235-A42D-786E7483EE87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA715ECD-DAD0-476A-9316-27A0CF618869}
 	EndGlobalSection
 EndGlobal
