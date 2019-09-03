@@ -1,0 +1,51 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: DotNetCoreInstaller@0
+  displayName: Install .NET Core v$(coreVersion)
+  inputs:
+      version: 2.2.x
+
+- task: DotNetCoreCLI@2
+  displayName: 'Restore NuGet packages'
+  inputs:
+    command: 'restore'
+    projects: '$(solution)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build solution'
+  inputs:
+    command: 'build'
+    projects: '$(solution)'
+    arguments: '-c $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: Run tests
+  inputs:
+    command: 'test'
+    projects: 'src/tests/**/*.Tests.csproj'
+    arguments: ' -c $(buildConfiguration) --no-build --no-restore'
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx'
+    testResultsFormat: 'xUnit'
+    failTaskOnFailedTests: true
+
+- task: DotNetCoreCLI@2
+  displayName: Package NuGet package
+  inputs:
+    command: pack
+    packagesToPack: 'src/**/*.csproj'
+    configuration: $(BuildConfiguration)
+    nobuild: true
+
+- task: PublishBuildArtifacts@1
+  displayName: Publish build artifacts
