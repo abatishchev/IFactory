@@ -11,7 +11,7 @@ variables:
 
 steps:
 - task: DotNetCoreInstaller@0
-  displayName: Install .NET Core v$(coreVersion)
+  displayName: 'Install .NET Core'
   inputs:
       version: 2.2.x
 
