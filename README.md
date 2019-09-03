@@ -10,8 +10,8 @@ Available on NuGet:
 
 [![IFactory](https://img.shields.io/nuget/v/IFactory.svg)](https://www.nuget.org/packages/IFactory)
 [![IFactory.SimpleInjector](https://img.shields.io/nuget/vpre/IFactory.SimpleInjector.svg)](https://www.nuget.org/packages/IFactory.SimpleInjector)
-[![Build status](https://abatishchev.visualstudio.com/IFactory/_apis/build/status/IFactory-CI)](https://abatishchev.visualstudio.com/IFactory/_build/latest?definitionId=3)
-[![Release status](https://abatishchev.vsrm.visualstudio.com/_apis/public/Release/badge/8b9e46ce-5cc8-4a91-abd2-051ce94d316c/1/1)](https://abatishchev.visualstudio.com/IFactory/_releases2?definitionId=1&_a=releases)
+[![Build Status](https://abatishchev.visualstudio.com/OpenSource/_apis/build/status/abatishchev.IFactory?branchName=master)](https://abatishchev.visualstudio.com/OpenSource/_build/latest?definitionId=8&branchName=master)
+[![Release status](https://abatishchev.vsrm.visualstudio.com/_apis/public/Release/badge/b7fc2610-91d5-4968-814c-97a9d76b03c4/3/3)](https://abatishchev.visualstudio.com/OpenSource/_release?definitionId=3&_a=releases)
 
 Samples
 ===
